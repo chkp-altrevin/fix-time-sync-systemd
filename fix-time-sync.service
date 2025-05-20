@@ -1,0 +1,11 @@
+[Unit]
+Description=Fix system clock drift after snapshots
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=oneshot
+ExecStart=/usr/local/bin/fix-time-sync-final.sh
+
+[Install]
+WantedBy=multi-user.target
