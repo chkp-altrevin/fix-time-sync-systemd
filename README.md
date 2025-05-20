@@ -19,3 +19,7 @@ sudo systemctl enable fix-time-sync.service
 sudo systemctl start fix-time-sync.service
 sudo journalctl -u fix-time-sync.service --no-pager
 ```
+## Download via curl command
+```bash
+curl -fsSL https://raw.githubusercontent.com/chkp-altrevin/fix-time-sync-systemd/main/fix-time-sync.sh -o fix-time-sync.sh && curl -fsSL https://raw.githubusercontent.com/chkp-altrevin/fix-time-sync-systemd/main/fix-time-sync.service -o fix-time-sync.service &&chmod +x fix-time-sync.sh fix-time-sync.service
+```
