@@ -5,7 +5,7 @@ Wants=network-online.target
 
 [Service]
 Type=oneshot
-ExecStart=/usr/local/bin/fix-time-sync-final.sh
+ExecStart=/usr/local/bin/fix-time-sync.sh
 
 [Install]
 WantedBy=multi-user.target
