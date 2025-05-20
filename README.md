@@ -4,7 +4,7 @@ fix those pesky time sync issues due to snapshot etc.
 ## Installation Steps
 1. Copy the script and service to their proper locations:
 ```bash
-sudo cp fix-time-sync-final.sh /usr/local/bin/fix-time-sync.sh
+sudo cp fix-time-sync.sh /usr/local/bin/fix-time-sync.sh
 sudo chmod +x /usr/local/bin/fix-time-sync.sh
 
 sudo cp fix-time-sync.service /etc/systemd/system/fix-time-sync.service
