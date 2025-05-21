@@ -23,3 +23,15 @@ sudo journalctl -u fix-time-sync.service --no-pager
 ```bash
 curl -fsSL https://raw.githubusercontent.com/chkp-altrevin/fix-time-sync-systemd/main/fix-time-sync.sh -o fix-time-sync.sh && curl -fsSL https://raw.githubusercontent.com/chkp-altrevin/fix-time-sync-systemd/main/fix-time-sync.service -o fix-time-sync.service &&chmod +x fix-time-sync.sh fix-time-sync.service
 ```
+
+### APT Fix
+What It Does:
+Checks for root access
+
+- Installs killall (via psmisc) if not present
+- Kills stuck apt, dpkg, or apt-get processes
+- Removes lock files safely
+- Reconfigures partial installs
+- Cleans and updates APT
+- Fixes broken installs
+
